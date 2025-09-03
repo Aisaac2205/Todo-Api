@@ -419,6 +419,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ### ⭐ ¡Si te gusta este proyecto, dale una estrella!
 
-**Hecho con ❤️ y Spring Boot**
+**Hecho con Java y Spring Boot**
 
 </div>
