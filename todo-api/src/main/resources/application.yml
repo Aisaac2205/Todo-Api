@@ -1,0 +1,35 @@
+server:
+  port:8080
+
+spring:
+  application:
+    name: todo-api
+
+  #Configuración H2
+  datasource:
+    URL: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  #Configuración JPA
+  jpa:
+    databse-plataform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    propierties:
+      hibernate:
+        format_sql: true
+
+# Consola H2 (para desarrollo)
+h2:
+  console:
+    enable: true
+    path: /h2-console
+
+# Logging
+loggin:
+  level:
+    com.example.todoapi: DEBUG
+    org.hibernate.SQL: DEBUG
